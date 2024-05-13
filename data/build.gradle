@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id("dagger.hilt.android.plugin")
+}
+
+android {
+    namespace 'com.astro.test.faisalbahri.data'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(path: ':common')
+
+    implementation libs.comGoogleDaggerHiltAndroid
+    kapt libs.comGoogleDaggerHiltAndroidCompiler
+
+    implementation libs.androidxAppcompat
+    implementation libs.androidxCoreKtx
+    implementation libs.comGoogleAndroidMaterial
+    implementation libs.comSquareupOkhttp3LoggingInterceptor
+    implementation libs.comSquareupRetrofit2Retrofit
+    implementation libs.comSquareupRetrofit2ConverterGson
+    implementation libs.ioReactivexRxjava2Rxandroid
+    implementation libs.comSquareupRetrofit2AdapterRxjava2
+    implementation libs.comGithubChuckerteamChuckerLibrary
+//    implementation libs.com.github.chuckerteam.chucker.library.no.op
+    implementation libs.ioGithubCdimascioDotenvKotlin
+
+    androidTestImplementation libs.androidxTestEspressoCore
+    androidTestImplementation libs.androidxTestExtJunit
+    testImplementation libs.junit
+    testImplementation(libs.ioMockkMockkAndroid)
+    testImplementation(libs.ioMockkMockk)
+    testImplementation(libs.orgJetbrainsKotlinxCoroutinesTest)
+}
