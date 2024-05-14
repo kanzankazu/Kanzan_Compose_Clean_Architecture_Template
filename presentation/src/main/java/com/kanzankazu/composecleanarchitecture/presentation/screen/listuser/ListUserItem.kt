@@ -1,4 +1,4 @@
-@file:OptIn(ExperimentalGlideComposeApi::class, ExperimentalGlideComposeApi::class)
+@file:OptIn(ExperimentalGlideComposeApi::class, ExperimentalGlideComposeApi::class, ExperimentalGlideComposeApi::class)
 
 package com.kanzankazu.composecleanarchitecture.presentation.screen.listuser
 
