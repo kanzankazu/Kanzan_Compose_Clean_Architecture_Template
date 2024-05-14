@@ -5,23 +5,21 @@ plugins {
     id("dagger.hilt.android.plugin")
 }
 
+apply from: "$rootDir/build_type_config.gradle"
+
 android {
-    namespace 'com.astro.test.faisalbahri.presentation'
+    namespace 'com.kanzankazu.composecleanarchitecture.presentation'
     compileSdk 34
 
     defaultConfig {
-        minSdk 21
+        minSdk 23
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
+    with buildTypeConfig
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

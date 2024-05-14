@@ -1,0 +1,19 @@
+ext.buildTypeConfig = {
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "String", "TEST_TAGS", "\"${getTestTags()}\""
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+def getTestTags() {
+    return project.hasProperty("tags") ? project.getProperties().get("tags") : ""
+}

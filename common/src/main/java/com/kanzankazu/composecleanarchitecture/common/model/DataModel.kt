@@ -1,0 +1,3 @@
+package com.kanzankazu.composecleanarchitecture.common.model
+
+interface DataModel

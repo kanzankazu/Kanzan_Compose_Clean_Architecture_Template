@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.astro.test.faisalbahri.data'
+    namespace 'com.kanzankazu.composecleanarchitecture.data'
     compileSdk 34
 
     defaultConfig {
-        minSdk 21
+        minSdk 23
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -48,6 +48,7 @@ dependencies {
     implementation libs.comGithubChuckerteamChuckerLibrary
 //    implementation libs.com.github.chuckerteam.chucker.library.no.op
     implementation libs.ioGithubCdimascioDotenvKotlin
+    implementation libs.androidxSecurityCrypto
 
     androidTestImplementation libs.androidxTestEspressoCore
     androidTestImplementation libs.androidxTestExtJunit

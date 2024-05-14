@@ -24,6 +24,7 @@ retrofit = "2.9.0"
 rxJava = "2.1.1"
 chucker = "3.5.2"
 dotenvKotlin = "6.4.0"
+androidxSecurityCrypto = "1.0.0"
 
 [libraries]
 androidxActivityCompose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
@@ -42,25 +43,26 @@ androidxLifecycleRuntimeCompose = { module = "androidx.lifecycle:lifecycle-runti
 androidxLifecycleRuntimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidxLifecycleViewmodelCompose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "compose" }
 androidxNavigationNavigationCompose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+androidxSecurityCrypto = { module = "androidx.security:security-crypto", version.ref = "androidxSecurityCrypto" }
 androidxTestEspressoCore = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
 androidxTestExtJunit = { module = "androidx.test.ext:junit", version.ref = "junitTest" }
 comGithubBumptechGlideCompose = { module = "com.github.bumptech.glide:compose", version.ref = "composeGlide" }
+comGithubChuckerteamChuckerLibrary = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
+comGithubChuckerteamChuckerLibraryNoOp = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
 comGoogleAndroidMaterial = { module = "com.google.android.material:material", version.ref = "material" }
+comGoogleDaggerHiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 comGoogleDaggerHiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 comSquareupOkhttp3LoggingInterceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
 comSquareupRetrofit2AdapterRxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofit" }
 comSquareupRetrofit2ConverterGson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 comSquareupRetrofit2Retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
-comGoogleDaggerHiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+ioGithubCdimascioDotenvKotlin = { module = "io.github.cdimascio:dotenv-kotlin", version.ref = "dotenvKotlin" }
 ioMockkMockk = { module = "io.mockk:mockk", version.ref = "mockkCore" }
 ioMockkMockkAndroid = { module = "io.mockk:mockk-android", version.ref = "mockkAndroid" }
 ioReactivexRxjava2Rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxJava" }
 junit = { module = "junit:junit", version.ref = "junit" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttpVersion" }
 orgJetbrainsKotlinxCoroutinesTest = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutinesCore" }
-comGithubChuckerteamChuckerLibrary = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
-comGithubChuckerteamChuckerLibraryNoOp = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
-ioGithubCdimascioDotenvKotlin = { module = "io.github.cdimascio:dotenv-kotlin", version.ref = "dotenvKotlin" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
